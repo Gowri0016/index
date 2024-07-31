@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form Animation with Image</title>
+<style>
+    body {
+        font-family: cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        margin: 0;
+        background-color: #216370;
+    }
+
+    .login-container {
+        background: none;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn 0.5s forwards;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    video
+    {
+        width: 1537px;
+        height: 890px;
+        position: fixed;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        background: none;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    button {
+        background: none;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .login-image {
+        width: 200px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+</style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="my video">
+        <source src="gp video.mp4" type="video/mp4">
+    </video>
+
+<div class="login-container">
+    <img class="login-image" src="gp bc1.jpg" alt="Login">
+    <h2>Login</h2>
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>

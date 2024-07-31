@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login am.html">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="GP Updates logo.jpg">
+        <title>GP UPDATES</title>
+</head>
+<style>
+  *{
+    text-decoration: none;
+}
+body
+{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    animation: fadeIn 1s ease-in-out;
+    animation-duration:1s;
+        
+    }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+100% {
+        opacity: 1;
+    }
+}
+video
+{
+    width: 1550px;
+    height: 890px;
+    position: fixed;
+}
+.gp
+{
+    background-color:gray;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    align-items: center;
+
+}
+.gp img
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 180px;
+}
+.gp i
+{
+    color: black;
+    position: relative;
+    left: 1050px;
+    bottom: 13px;
+}
+.web
+{
+    font-family: cursive;
+    background: none;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid skyblue;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.webcr
+{
+    border-radius: 100%;
+    border: 2px solid skyblue;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: 250px;
+    top: 100px;
+}
+.webcr img
+{
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+.hub
+{
+    font-family: cursive;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid lightcoral;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 400px;
+    right: 100px;
+}
+.hubcr
+{
+    border-radius: 50px;
+    border: 2px solid lightcoral;
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    left: 250px;
+    top: 450px;
+}
+.hubcr img
+{
+    border-radius: 50px;
+    width: 350px;
+    height: 200px;
+}
+.pro
+{
+    font-family: cursive;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 700px;
+    left:100px ;
+}
+.procr 
+{
+    border-radius: 100px;
+    border: 2px solid lightcoral;
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    right: 350px;
+    top: 725px; 
+}
+.procr img
+{
+    border-radius: 50px;
+    height: 250px;
+    width: 150px;
+}
+.buh
+{
+    font-family: cursive;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 1000px;
+    right: 100px;
+}
+.buhcr
+{
+    border-radius: 50px;
+    border: 2px solid lightcoral;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 250px;
+    top: 1025px;
+}
+.buhcr img
+{
+    border-radius: 50px;
+    height: 250px;
+    width: 250px;  
+}
+.hu
+{
+    font-family: cursive;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 1300px;
+    left: 100px;
+}
+.hucr
+{
+    border-radius: 50px;
+    border: 2px solid lightcoral;
+    height: 250px;
+    width: 450px;
+    position: absolute;
+    right: 180px;
+    top: 1345px;
+}
+.hucr img
+{
+    
+    border-radius: 50px;
+    height: 250px;
+    width: 450px; 
+}
+.fu
+{
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 150px;
+    width: 1518px;
+    position: absolute;
+    bottom: -1200px;
+    left: 0px;
+}  
+.fucr
+{
+    border-radius: 100%;
+    border: 2px solid lightcoral;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 40px;
+    top: 1830px;
+}  
+.fucr img
+{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+.button
+{
+    border: 1px solid white;
+    position: relative;
+    left: 1420px;
+    background-color: gray;
+    bottom: 25px;
+    width: 60px;
+    text-align: center;
+}
+a{
+    font-size: medium;
+    color: white;
+    font-family: cursive;
+}
+</style>
+<body>
+        
+
+        <video autoplay muted loop id="my video">
+            <source src="gp video.mp4" type="video/mp4">
+        </video>
+
+      <div class="gp">
+        <div class="gp i">
+        <img src="gp bc1.jpg">
+        <div class="button"><a href="login.html">Login</a></div>
+    </div>
+      </div>
+
+      <div class="web">
+        <h1>We Interduce GP Updates</h1>
+        <p>Mobiles & Laptops <br>
+             <br>All brand Mobiles In Avalable 
+             <br> > Iphone - 15 Pro Max 50% Offer 
+             <br> > One Plus - 12R 35% Offer 
+             <br> > Samsung - S24 Ulttra 28% Offer 
+             <br> > Vivo - X 100 Pro 20% Offer 
+             <br> > Googel Pixel - 8 Pro 
+             <br><a href="web page.html">More Info</a></p>
+      </div>
+
+      <div class="hub">
+        <h1>Update New Collections</h1>
+        <p>T-Shirt-Lowers-All In One GP Updates</p>
+      </div>
+
+      <div class="pro">
+        <h1>Foot Wares Women-Men & Kid's</h1>
+        <p>Shooes-Crocs-All In One GP Updates </p>
+      </div>
+            
+      <div class="buh">
+            <h1>Makeup Kits</h1>
+            <p>Lipstick-Eyeliner-All In One GP Updates</p>
+      </div>
+
+      <div class="hu">
+            <h1>Home Appliances</h1>
+            <p>TV-Frigge-Washing Meachine-All In One GP Updates</p>
+      </div>
+
+      <div class="fu">
+        <h1>Thank for Visit</h1>
+      </div>
+
+      <div class="webcr">
+        <img src="mobile.jpg">
+        <h1></h1>
+      </div>
+       
+      <div class="hubcr">
+        <img src="dress.jpg">
+      </div>
+
+      <div class="procr">
+        <img src="shooes.jpg">
+      </div>
+
+      <div class="buhcr">
+        <img src="makeup.jpg">
+      </div>
+
+      <div class="hucr">
+        <img src="home.webp">
+      </div>
+
+      <div class="fucr">
+        <img src="GP Updates logo.jpg">
+      </div>
+      
+</html>
+</body>
