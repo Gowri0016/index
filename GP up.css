@@ -259,7 +259,6 @@ a{
 .gp img
 {
     margin-top: 5px;
-    margin-left: 225px;;
     width: 100px;
 }
 .gp i
@@ -272,13 +271,13 @@ a{
 .web
 {
     font-family: cursive;
-    font-size: small;
+    font-size: medium;
     background: none;
     color: white;
     border-radius: 10px;
     border: 2px solid skyblue;
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 400px;
     position: absolute;
     top: 100px;
     left: 50px;
@@ -292,12 +291,14 @@ a{
     position: absolute;
     left: 380px;
     top: 100px;
+    display: none;
 }
 .webcr img
 {
     border-radius: 100%;
     width: 100px;
     height: 100px;
+    display: none;
 }
 .hub
 {
@@ -306,24 +307,24 @@ a{
     border-radius: 10px;
     border: 2px solid lightcoral;
     height: 250px;
-    width: 300px;
+    width: 400px;
     position: absolute;
-    top: 400px;
-    right: 100px;
+    top: 450px;
+    left: 50px;
 }
 .hubcr
 {
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1px solid lightcoral;
     height: 100px;
     width: 150px;
     position: absolute;
-    left: 250px;
-    top: 450px;
+    left: 300px;
+    top: 600px;
 }
 .hubcr img
 {
-    border-radius: 50px;
+    border-radius: 10px;
     width: 150px;
     height: 100px;
 }
@@ -334,27 +335,26 @@ a{
     border-radius: 10px;
     border: 2px solid white;
     height: 300px;
-    width: 600px;
+    width: 400px;
     position: absolute;
-    top: 700px;
-    left:100px ;
+    top: 750px;
+    left:50px ;
 }
 .procr 
 {
-    border-radius: 100px;
+    border-radius: 10px;
     border: 2px solid lightcoral;
-    height: 250px;
+    height: 240px;
     width: 150px;
     position: absolute;
-    right: 350px;
-    top: 725px; 
+    left:50px;
+    top: 810px; 
 }
 .procr img
 {
-    border-radius: 50px;
-    height: 250px;
+    border-radius: 10px;
+    height: 240px;
     width: 150px;
-    display: none;
 }
 .buh
 {
@@ -363,27 +363,27 @@ a{
     border-radius: 10px;
     border: 2px solid white;
     height: 300px;
-    width: 600px;
+    width: 400px;
     position: absolute;
-    top: 1000px;
-    right: 100px;
+    top: 1100px;
+    left: 50px;
 }
 .buhcr
 {
-    border-radius: 50px;
+    border-radius: 10px;
     border: 2px solid lightcoral;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     position: absolute;
-    left: 250px;
-    top: 1025px;
+    left: 300px;
+    top: 1250px;
 }
 .buhcr img
 {
-    border-radius: 50px;
-    height: 250px;
-    width: 250px;
-    display: none;  
+    border-radius: 10px;
+    height:150px;
+    width: 150px;
+  
 }
 .hu
 {
@@ -392,28 +392,27 @@ a{
     border-radius: 10px;
     border: 2px solid white;
     height: 300px;
-    width: 600px;
+    width: 400px;
     position: absolute;
-    top: 1300px;
-    left: 100px;
+    top: 1450px;
+    left: 50px;
 }
 .hucr
 {
-    border-radius: 50px;
+    border-radius: 10px;
     border: 2px solid lightcoral;
-    height: 250px;
-    width: 450px;
+    height: 150px;
+    width: 200px;
     position: absolute;
-    right: 180px;
-    top: 1345px;
+    left: 250px;
+    top: 1600px;
 }
 .hucr img
 {
     
-    border-radius: 50px;
-    height: 250px;
-    width: 450px; 
-    display: none;
+    border-radius: 10px;
+    height: 150px;
+    width: 200px; 
 }
 .fu
 {
@@ -423,7 +422,7 @@ a{
     border-radius: 10px;
     border: 2px solid white;
     height: 150px;
-    width: 1518px;
+    width: 480px;
     position: absolute;
     bottom: -1200px;
     left: 0px;
@@ -449,7 +448,7 @@ a{
 {
 
     position: relative;
-    left: 500px;
+    left: 420px;
     background-color: gray;
     bottom: 25px;
     width: 60px;
