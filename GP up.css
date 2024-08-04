@@ -236,7 +236,7 @@ a{
     color: white;
     font-family: cursive;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 450px){
     body {
         min-height: 100%;
         background-color: black;
@@ -444,7 +444,7 @@ a{
     width: 100px;
     position: absolute;
     right: 40px;
-    top: 1780px;
+    top: 1800px;
 }  
 .fucr img
 {
