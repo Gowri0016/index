@@ -35,7 +35,21 @@ video
     top: 0px;
     z-index: 2;
     align-items: center;
-
+    animation-name: gp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes gp {
+    0%{
+        background: lightcoral;
+    }
+    50%{
+        background: lightyellow;
+    }
+    100%{
+        background: skyblue;
+    }
+    
 }
 .gp img
 {
