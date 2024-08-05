@@ -86,7 +86,46 @@
     @media screen and (max-width: 740px) {
     body {
         background: rgb(252, 250, 250);
+        animation-name: change;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
     }
+    @keyframes change {
+        0%{
+            background: lightskyblue;
+        }
+        10%{
+            background: lightpink;
+        }
+        20%{
+            background: lightblue;
+        }
+        30%{
+            background: lightgreen;
+        }
+        40%{
+            background: lightcoral;
+        }
+        50%{
+            background: lightseagreen;
+        }
+        60%{
+            background: lightcoral;
+        }
+        70%{
+            background: lightgoldenrodyellow;
+        }
+        80%{
+            background: lightslategray;
+        }
+        90%{
+            background: lightsteelblue;
+        }
+        100%{
+            background: lightyellow;
+        }
+
+}
 
     .image-container {
         margin-left: 22px;
@@ -94,7 +133,7 @@
 
     h1
     {
-        color: skyblue;
+        color: black;
     }
 
     .text-container {
