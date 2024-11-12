@@ -19,13 +19,14 @@
       .content {
         text-align: center;
         animation: fadeIn 2s ease-in-out;
+        animation-duration:2s;
     }
 
     @keyframes fadeIn {
-        from {
+        0% {
             opacity: 0;
         }
-        to {
+        100% {
             
             opacity: 1;
         }
@@ -60,72 +61,22 @@
    .button {
         display: inline-block;
         padding: 10px 20px;
-        background-color: green;
+        background-color: rgb(23, 103, 240);
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
-        transition: background-color 0.s ease;
+        background-color :0.s ease;
     }
 
-    .button:hover {
-        background:red;
-    }
-    .button1 {
+    .button1 {  
         display: inline-block;
         padding: 10px 20px;
-        background-color:red;
+        background-color: rgb(23, 103, 240);
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
         transition: background-color 2s ease;
     }
-
-    .button:hover {
-        background: green;
-    }
-    @media screen and (max-width: 740px) {
-    body {
-        background: rgb(252, 250, 250);
-        animation-name: change;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-    }
-    @keyframes change {
-        0%{
-            background: lightskyblue;
-        }
-        10%{
-            background: lightpink;
-        }
-        20%{
-            background: lightblue;
-        }
-        30%{
-            background: lightgreen;
-        }
-        40%{
-            background: lightcoral;
-        }
-        50%{
-            background: lightseagreen;
-        }
-        60%{
-            background: lightcoral;
-        }
-        70%{
-            background: lightgoldenrodyellow;
-        }
-        80%{
-            background: lightslategray;
-        }
-        90%{
-            background: lightsteelblue;
-        }
-        100%{
-            background: lightyellow;
-        }
-
-}
 
     .image-container {
         margin-left: 22px;
@@ -139,12 +90,49 @@
     .text-container {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 500px) {
-    .footList {
-        width: 50%;
+@media screen and (max-width: 600px) {
+
+    .image-container {
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+            
+        }
     }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100px;
+        background-color: rgb(23, 103, 240);
+        font-size: 14px;
+    }
+
+    .button1 {
+        width: 100px;
+        background-color: rgb(23, 103, 240);
+        font-size: 14px;
+    }
+
 }
 </style>
 <body>
@@ -154,11 +142,12 @@
         <img src="GP Updates logo.jpg" alt="Placeholder Image">
     </div>
     <div class="text-container">
-        <h1>Welcome to GP Updates💝</h1>
+        <h1>Welcome to GP Updates💝</h1> <br>
         <p>This is a one of online Marketing Shop 🛍</p>
         <a href="GP up.html" class="button">Click Me 😁</a>
+        <a href="home.html" class="button1">Click Home 🏠</a>
     </div>
-    <a href="home.html" class="button1">Click Home 🏠</a>
+   
 </div>
 </body>
 </html>
