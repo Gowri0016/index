@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="GP Updates logo.jpg">
     <title>GP Updates </title>
 </head>
@@ -11,26 +15,31 @@
         font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
-        align-items: center;
         height: 100vh;
         margin: 0px;
         background-color: skyblue;
     }
-      .content {
+
+    .content {
         text-align: center;
+        position: relative;
+        top: 150px;
         animation: fadeIn 2s ease-in-out;
-        animation-duration:2s;
+        animation-duration: 2s;
     }
 
     @keyframes fadeIn {
         0% {
             opacity: 0;
         }
+
         100% {
-            
+
             opacity: 1;
         }
     }
+
+
 
     .image-container {
         margin-bottom: 30px;
@@ -45,7 +54,6 @@
 
     .text-container {
         max-width: 500px;
-        margin: 0 auto;
     }
 
     h1 {
@@ -57,33 +65,28 @@
         line-height: 1.6;
     }
 
- 
-   .button {
-        display: inline-block;
-        padding: 10px 20px;
+    .con button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
         background-color: rgb(23, 103, 240);
         color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        background-color :0.s ease;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 1s ease;
     }
 
-    .button1 {  
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: rgb(23, 103, 240);
+    .con button:hover {
+        background-color: rgb(240, 146, 23);
         color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 2s ease;
     }
 
     .image-container {
         margin-left: 22px;
     }
 
-    h1
-    {
+    h1 {
         color: black;
     }
 
@@ -91,63 +94,98 @@
         width: 100%;
     }
 
-@media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
 
-    .image-container {
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
+
+    
+
+            .image-container {
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+
+                        opacity: 1;
+                    }
+
+                }
             }
-            100% {
-                opacity: 1;
+
+            .text-container {
+                width: 100%;
             }
-            
+
+            .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .text-con {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 10px;
+
+            }
+
+            .con button {
+                width: 100px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(23, 103, 240);
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.5s ease;
+            }
+
+            .con button:hover {
+                background-color: black;
+                color: #fff;
+            }
         }
-    }
-
-    .text-container {
-        width: 100%;
-    }
-
-    .content {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .button {
-        width: 100px;
-        background-color: rgb(23, 103, 240);
-        font-size: 14px;
-    }
-
-    .button1 {
-        width: 100px;
-        background-color: rgb(23, 103, 240);
-        font-size: 14px;
-    }
-
-}
 </style>
+
 <body>
 
-   <div class="content">
-    <div class="image-container">
-        <img src="GP Updates logo.jpg" alt="Placeholder Image">
+    <div class="content">
+
+
+       
+
+        <div class="image-container">
+            <img src="GP Updates logo.jpg" alt="Placeholder Image">
+        </div>
+
+        <div class="text-container">
+            <h1>Welcome to GP Updates💝</h1>
+        </div>
+
+        <div class="con">
+            <button id="button">click me</button>
+        </div>
     </div>
-    <div class="text-container">
-        <h1>Welcome to GP Updates💝</h1> <br>
-        <p>This is a one of online Marketing Shop 🛍</p>
-        <a href="GP up.html" class="button">Click Me 😁</a>
-        <a href="home.html" class="button1">Click Home 🏠</a>
-    </div>
-   
-</div>
+
 </body>
+
+            <script>
+                const button = document.getElementById('button');
+                button.addEventListener('click', () => {
+                    window.location.href = "web page.html";
+
+                });
+            </script>
 </html>
+
+
+
+
