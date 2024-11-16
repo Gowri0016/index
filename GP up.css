@@ -7,6 +7,7 @@ body
     width: 100%;
     margin-top: 0px;
     margin-left: 0px;
+    background-color: black;
     animation: fadeIn 1s ease-in-out;
     animation-duration:1s;
         
@@ -20,11 +21,22 @@ body
         opacity: 1;
     }
 }
-video
+.close
 {
-    width: 1550px;
-    height: 890px;
-    position: fixed;
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: solid white 1px;
+    border-radius: 50px;
+    padding: 2.5px;
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 1%;
+    z-index: 6;
 }
 .gp
 {
@@ -35,21 +47,6 @@ video
     top: 0px;
     z-index: 2;
     align-items: center;
-    animation-name: gp;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-@keyframes gp {
-    0%{
-        background: lightcoral;
-    }
-    50%{
-        background: lightyellow;
-    }
-    100%{
-        background: skyblue;
-    }
-    
 }
 .gp img
 {
@@ -57,431 +54,11 @@ video
     margin-left: 5px;
     width: 180px;
 }
-.gp i
+.intro
 {
-    color: black;
-    position: relative;
-    left: 1050px;
-    bottom: 13px;
-}
-.web
-{
-    font-family: cursive;
-    background: none;
+    text-align: left;
     color: white;
-    border-radius: 10px;
-    border: 2px solid skyblue;
-    height: 320px;
-    width: 600px;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-}
-.webcr
-{
-    border-radius: 100%;
-    border: 2px solid skyblue;
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    right: 250px;
-    top: 100px;
-}
-.webcr img
-{
-    border-radius: 100%;
-    width: 250px;
-    height: 250px;
-}
-.hub
-{
-    font-family: cursive;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid lightcoral;
-    height: 300px;
-    width: 600px;
-    position: absolute;
-    top: 400px;
-    right: 100px;
-}
-.hubcr
-{
-    border-radius: 50px;
-    border: 2px solid lightcoral;
-    height: 200px;
-    width: 350px;
-    position: absolute;
-    left: 250px;
-    top: 450px;
-}
-.hubcr img
-{
-    border-radius: 50px;
-    width: 350px;
-    height: 200px;
-}
-.pro
-{
-    font-family: cursive;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 300px;
-    width: 600px;
-    position: absolute;
-    top: 700px;
-    left:100px ;
-}
-.procr 
-{
-    border-radius: 100px;
-    border: 2px solid lightcoral;
-    height: 250px;
-    width: 150px;
-    position: absolute;
-    right: 350px;
-    top: 725px; 
-}
-.procr img
-{
-    border-radius: 50px;
-    height: 250px;
-    width: 150px;
-}
-.buh
-{
-    font-family: cursive;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 300px;
-    width: 600px;
-    position: absolute;
-    top: 1000px;
-    right: 100px;
-}
-.buhcr
-{
-    border-radius: 50px;
-    border: 2px solid lightcoral;
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    left: 250px;
-    top: 1025px;
-}
-.buhcr img
-{
-    border-radius: 50px;
-    height: 250px;
-    width: 250px;  
-}
-.hu
-{
-    font-family: cursive;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 300px;
-    width: 600px;
-    position: absolute;
-    top: 1300px;
-    left: 100px;
-}
-.hucr
-{
-    border-radius: 50px;
-    border: 2px solid lightcoral;
-    height: 250px;
-    width: 450px;
-    position: absolute;
-    right: 180px;
-    top: 1345px;
-}
-.hucr img
-{
-    
-    border-radius: 50px;
-    height: 250px;
-    width: 450px; 
-}
-.fu
-{
-    font-family: cursive;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 150px;
-    width: 1518px;
-    position: absolute;
-    bottom: -1200px;
-    left: 0px;
-}  
-.fucr
-{
-    border-radius: 100%;
-    border: 2px solid lightcoral;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    right: 40px;
-    top: 1830px;
-}  
-.fucr img
-{
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-}
-.button
-{
-    border: 1px solid white;
-    position: relative;
-    left: 1420px;
-    background-color: gray;
-    bottom: 25px;
-    width: 60px;
-    text-align: center;
-}
-a{
-    font-size: medium;
-    color: white;
-    font-family: cursive;
-}
-@media screen and (max-width: 450px){
-    body {
-        min-height: 100%;
-        background-color: black;
-    }
-    *{
-        text-decoration: none;
-        margin: 0;
-    }
-    video{
-       
-        position: fixed;
-        width: 500px;
-
-    }
-    .gp
-{
-    background-color:gray;
-    width: 700px;
-    height: 35px;
-    position: fixed;
-    top: 0px;
-    z-index: 2;
-    align-items: center;
-
-}
-.gp img
-{
-    margin-top: 5px;
-    margin-left: 200px;
-    width: 100px;
-}
-.gp i
-{
-    color: black;
-    position: relative;
-    left: 550;
-    bottom: 13px;
-}
-.web
-{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-    background: none;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid skyblue;
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 100px;
-    left: 50px;
-}
-.webcr
-{
-    border-radius: 100%;
-    border: 1px solid skyblue;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    left: 380px;
-    top: 100px;
-    display: none;
-}
-.webcr img
-{
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    display: none;
-}
-.hub
-{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid lightcoral;
-    height: 250px;
-    width: 400px;
-    position: absolute;
-    top: 450px;
-    left: 50px;
-}
-.hubcr
-{
-    border-radius: 10px;
-    border: 1px solid lightcoral;
-    height: 100px;
-    width: 150px;
-    position: absolute;
-    left: 300px;
-    top: 600px;
-}
-.hubcr img
-{
-    border-radius: 10px;
-    width: 150px;
-    height: 100px;
-}
-.pro
-{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 750px;
-    left:50px ;
-}
-.procr 
-{
-    border-radius: 10px;
-    border: 2px solid lightcoral;
-    height: 240px;
-    width: 150px;
-    position: absolute;
-    left:50px;
-    top: 810px; 
-    display: none;
-}
-.procr img
-{
-    border-radius: 10px;
-    height: 240px;
-    width: 150px;
-    display: none;
-}
-.buh
-{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 1100px;
-    left: 50px;
-}
-.buhcr
-{
-    border-radius: 10px;
-    border: 2px solid lightcoral;
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    left: 300px;
-    top: 1250px;
-}
-.buhcr img
-{
-    border-radius: 10px;
-    height:150px;
-    width: 150px;
-  
-}
-.hu
-{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 1450px;
-    left: 50px;
-}
-.hucr
-{
-    border-radius: 10px;
-    border: 2px solid lightcoral;
-    height: 150px;
-    width: 200px;
-    position: absolute;
-    left: 250px;
-    top: 1600px;
-}
-.hucr img
-{
-    
-    border-radius: 10px;
-    height: 150px;
-    width: 200px; 
-}
-.fu
-{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid white;
-    height: 150px;
-    width: 480px;
-    position: absolute;
-    bottom: -1200px;
-    left: 0px;
-}  
-.fucr
-{
-    border-radius: 100%;
-    border: 2px solid lightcoral;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    left: 350px;
-    top: 1900px;
-}  
-.fucr img
-{
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-
-}
-.button
-{
-
-    position: relative;
-    left: 420px;
-    background-color: gray;
-    bottom: 25px;
-    width: 60px;
-    text-align: center;
-}
-a{
-    font-size: medium;
-    color: white;
-    font-family: cursive;
-}
-
-    
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
