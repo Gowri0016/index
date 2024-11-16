@@ -15,22 +15,31 @@
     font-family: 'Roboto', sans-serif;
 }
 body {
-    background-color: black;
-}
-video
-{
-    width: 1550px;
-    height: 890px;
-    position: fixed;
+    background-color: gray;
 }
 body::before {
-    position: absolute;
-    left: 0;
-    top: 0;
+    
     opacity: 0.5;
     width: 100%;
     height: 100%;
     background-position: center;
+}
+.close
+{
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: solid white 1px;
+    border-radius: 50px;
+    padding: 2.5px;
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 230px;
+    right: 39%;
+    z-index: 6;
 }
 nav {
     position: fixed;
@@ -91,13 +100,22 @@ form .form-control {
     font-size: 0.75rem;
     transform: translateY(-130%);
 }
-form button {
+.call
+{
+    text-decoration: none;
+    color: #757575;
+}
+.call:hover
+{
+      text-decoration: underline;
+}
+button {
     width: 100%;
     padding: 16px 0;
     font-size: 1rem;
     background: #0973e5;
     color: #fff;
-    font-weight: 500;
+    font-weight: 500px;
     border-radius: 4px;
     border: none;
     outline: none;
@@ -134,25 +152,124 @@ form .form-help :where(label, a) {
 .form-wrapper p a {
     color: #fff;
 }
+
 @media screen and (max-width:500px){
-    video{
-       
-       position: fixed;
-       width: 500px;
+    body{
+        background-color: darkslategray
+    }
+    .close
+    {
+        color: white;
+        font-size: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        border: solid white 1px;
+        border-radius: 50px;
+        padding: 2.5px;
+        width: 50px;
+        height: 15px;
+        cursor: pointer;
+        position: absolute;
+        top: 100px;
+        right: 12%;
+        z-index: 6;
+    }
+    .call
+    {
+        text-decoration: none;
+        color: #757575;
+    }
+    .call:hover
+    {
+          text-decoration: underline;
+    }
+    .form-control input:is(:focus, :valid)~label {
+        font-size: 0.6rem;
+        transform: translateY(-130%);
+    }
+    .form-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 15px;
+        padding: 70px;
+        width: 400px;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, .75);
+    }
+    .form-wrapper h2 {
+        color: #fff;
+        font-size: 1.5rem;
 
-   }   
+    }
+    .form-wrapper form {
+        margin: 25px 0 65px;
+    }
+    .form-wrapper p {
+        margin: 25px 0 65px;
+        text-align: center;
+    }
+    form .form-control {
+        height: 50px;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    .form-control input {
+        height: 100%;
+        width: 100%;
+        background: #333;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    .form-control input:is(:focus, :valid) {
+        background: #444;
+        padding: 16px 20px 0;
+    }
+    .form-control label {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        pointer-events: none;
+        color: #8c8c8c;
+        transition: all 0.1s ease;
+    }
+    form .form-help {
+        display: flex;
+        justify-content: space-between;
+    }
+    form .remember-me {
+        display: flex;
+    }
+    form .remember-me input {
+        margin-right: 5px;
+        accent-color: #b3b3b3;
+    }
+    form .form-help :where(label, a) {
+        font-size: 0.9rem;
+    }
+    .form-wrapper p a {
+        color: #fff;
+    }
+
+
 }
-
 
 </style>
 <body>
 
-    <video autoplay muted loop id="my video">
-        <source src="gp video.mp4" type="video/mp4">
-    </video>
+    <div class="close">
+        <h3>close X</h3>
+    </div>
+
 
     <nav>
-        <a href="GP up.html"><img src="gp bc1.jpg"></a>
+        <a href="#"><img src="gp bc1.jpg"></a>
     </nav>
     <div class="form-wrapper">
         <h2>Sign In</h2>
@@ -165,7 +282,7 @@ form .form-help :where(label, a) {
                 <input type="password" required>
                 <label>Password</label>
             </div>
-            <button type="submit">Sign In</button>
+            <button id="button">Sign In</button>
             <div class="form-help"> 
                 <div class="remember-me">
                     <input type="checkbox" id="remember-me">
@@ -175,9 +292,27 @@ form .form-help :where(label, a) {
         </form>
         <p>New to GP Updates? <a href="GP helpcenter.html">Sign up now</a></p>
         <small>
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. 
-            <a href="home.html">Learn more.</a>
+            This page is protected by GP Updates💝 reCAPTCHA to ensure you're not a bot. 
         </small>
+        <div class="call">
+            Questions? Call <a 
+                         href="tel:805-688-9616"
+                         class="tel-link">805-688-9616</a>
+            <div>
     </div>
 </body>
+<script>
+    let close = document.querySelector('.close');
+    close.addEventListener('click', () => {
+        window.location.href = "index.html";
+    }); 
+
+
+    const button = document.getElementById('button');
+    button.addEventListener('click', () => {
+        window.location.href = "GP up.html";
+
+    });
+
+</script>
 </html>
